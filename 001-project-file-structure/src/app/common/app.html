@@ -1,0 +1,11 @@
+<md-sidenav ng-nicescroll layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" >
+    <app-sidebar user="appCtrl.user" on-logout="appCtrl.logout();"></app-sidebar>
+</md-sidenav>
+<div layout="column" flex>
+    <md-toolbar class="md-whiteframe-z1 pprl">
+        <app-nav user="appCtrl.user" on-logout="appCtrl.logout();"></app-nav>
+    </md-toolbar>
+    <div layout="row" id="content" flex>
+        <div layout="row" ui-view flex></div>
+    </div>
+</div>

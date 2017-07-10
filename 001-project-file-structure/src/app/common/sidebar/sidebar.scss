@@ -1,0 +1,60 @@
+// bower:scss
+// endbower
+md-sidenav{
+    width: 230px;
+
+    .user-options{
+        margin: 15px;
+        text-align: center;
+
+        img{
+            height: 70px;
+        }
+
+        md-menu{
+            display: block;
+
+            .md-button{
+                text-transform: inherit;
+            }
+        }
+    }
+
+    aside{
+
+        ul{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(100, 100, 100, 0.1);
+            padding: 0;
+
+            .md-button{
+                margin: 0;
+                padding: 0px;
+                text-align: left;
+                text-transform: inherit;
+                width: 100%;
+
+                &.md-raised:not([disabled]){
+
+                    border-radius: 0px;
+                }
+
+                a{
+                    color: inherit;
+                    display: block;
+                    height: 100%;
+                    padding-left: 25px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+
+            li{
+                border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+// injector
+// endinjector
