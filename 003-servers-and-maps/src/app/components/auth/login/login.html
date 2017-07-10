@@ -1,0 +1,11 @@
+<div class="auth" md-whiteframe="3">
+  <md-toolbar>
+    <h2>Login</h2>
+  </md-toolbar>
+  <auth-form 
+    user="loginCtrl.user"
+    message="{{ loginCtrl.error }}"
+    button="Login"
+    on-submit="loginCtrl.loginUser($event);">
+  </auth-form>
+</div>

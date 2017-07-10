@@ -1,0 +1,26 @@
+// bower:scss
+// endbower
+.auth {
+    background-color: #fff;
+    text-align: center;
+    width: 320px;
+
+    form{
+        padding: 10px 40px 30px;
+
+        md-input-container{
+            margin-bottom: 0;
+            width: 100%;
+
+            .md-errors-spacer{
+                min-height: 0;
+            }
+        }
+
+        .md-button{
+            margin-top: 20px;
+        }
+    }
+}
+// injector
+// endinjector

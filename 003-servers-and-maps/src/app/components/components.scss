@@ -1,0 +1,47 @@
+// bower:scss
+// endbower
+#content{
+    background-color: $gay;
+
+    md-toolbar{
+
+        .md-button{
+
+            margin: 0px;
+
+            &.md-raised:not([disabled]){
+
+                border-radius: 0px;
+                box-shadow: none;
+            }
+
+            a{
+                color: inherit;
+                display: block;
+                line-height: 62px;
+                padding: 0px 10px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    md-content{
+
+        &[md-scroll-y]{
+            background-color: $gay;
+        }
+
+        [md-whiteframe]{
+            margin-bottom: 16px;
+        }
+
+        md-toolbar{
+
+            .toolbar-title{
+                margin: 0px;
+            }
+        }
+    }
+}
+// injector
+// endinjector

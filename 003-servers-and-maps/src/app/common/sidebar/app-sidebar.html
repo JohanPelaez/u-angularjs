@@ -1,0 +1,30 @@
+<md-toolbar class="md-padding">
+    <h1>Talos U</h1>
+</md-toolbar>
+<div class="user-options">
+    <img src="assets/images/user.png" class="md-avatar" alt="user">
+    <md-menu>
+        <md-button aria-label="Open phone interactions menu" class="md-button" ng-click="sidebarCtrl.openMenu($mdMenu, $event)">
+            {{::sidebarCtrl.user.name}}
+        </md-button>
+        <md-menu-content width="4">
+            <md-menu-item>
+                <md-button ng-click="sidebarCtrl.onLogout();">
+                    <md-icon md-menu-align-target></md-icon>
+                    Log Out
+                </md-button>
+            </md-menu-item>
+        </md-menu-content>
+    </md-menu>
+</div>
+<aside class="sidebar">
+    <ul>
+        <li ng-repeat="item in sidebarCtrl.pages">
+            <md-button class="ng-isolate-scope" ui-sref-active="md-primary md-raised">
+                <a ui-sref="{{item.state}}">
+                    <span>{{ ::item.label }}</span>
+                </a>
+            </md-button>
+        </li>
+    </ul>
+</aside>

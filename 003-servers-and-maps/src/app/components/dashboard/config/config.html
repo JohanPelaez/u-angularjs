@@ -1,0 +1,5 @@
+<div layout="row" layout-margin layout-wrap layout-padding flex>    
+    <md-button class="md-raised" ng-repeat="conf in configCtrl.configuration" md-whiteframe="3" flex="30" ng-click="configCtrl.showInfo(conf)">
+        {{::conf.name}} {{::conf.lastname}}
+    </md-button>
+</div>

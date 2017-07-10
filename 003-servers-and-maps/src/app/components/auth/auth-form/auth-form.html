@@ -1,0 +1,16 @@
+<form name="authForm" novalidate ng-submit="authCtrl.submitForm();">
+    <div layout="row">
+        <md-input-container>
+            <label>Name</label>
+            <input ng-model="authCtrl.user.name" type="text" required="required">
+        </md-input-container>
+    </div>
+  <div class="auth-button">
+    <md-button class="md-raised md-primary" type="submit" ng-disabled="authForm.$invalid">
+      {{ authCtrl.button }}
+    </md-button>
+  </div>
+  <div ng-if="authCtrl.message" class="message error">
+    {{ authCtrl.message }}
+  </div>
+</form>

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Daniela",
+        "lastname": "Barrientos",
+        "age": "22",
+        "place": "1"
+    },
+    {
+        "name": "Johan",
+        "lastname": "Pelaez",
+        "age": "27",
+        "place": "1"
+    },
+    {
+        "name": "Mateo",
+        "lastname": "Carvajal",
+        "age": "25",
+        "place": "2"
+    },
+    {
+        "name": "Felipe",
+        "lastname": "Valencia",
+        "age": "27",
+        "place": "3"
+    },
+    {
+        "name": "Camilo",
+        "lastname": "Isaza",
+        "age": "31",
+        "place": "1"
+    }
+]
