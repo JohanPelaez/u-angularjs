@@ -1,0 +1,9 @@
+<div layout="row" layout-margin layout-wrap layout-padding flex>    
+    <div md-whiteframe="3" flex="30">
+        <div><strong>Name</strong>: {{::detailsCtrl.conf.name}}</div>
+        <div><strong>Lastname</strong>: {{::detailsCtrl.conf.lastname}}</div>
+        <div><strong>Age</strong>: {{::detailsCtrl.conf.age}}</div>
+        <div><strong>Place</strong>: {{::detailsCtrl.conf.place}}</div>
+    </div>
+</div>
+<md-button ng-click="detailsCtrl.goBack()" class="md-raised md-primary">Back</md-button>
