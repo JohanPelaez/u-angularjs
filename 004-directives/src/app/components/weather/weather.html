@@ -1,0 +1,13 @@
+<md-content class="md-padding weather-view" md-scroll-y>
+    <div class="jumbotron" flex>
+	    <h1 class="display-3">Weather App!</h1>
+	    <p class="lead">Let's click the map and see how it brings the weather in the spesific point that you click.</p>
+	    <md-radio-group ng-model="weatherCtrl.kind">
+	      <md-radio-button value="0" class="md-primary">Weather</md-radio-button>
+	      <md-radio-button value="1" disabled class="md-primary">UV</md-radio-button>
+	      <md-radio-button value="2" disabled class="md-primary">Pollution</md-radio-button>
+	    </md-radio-group>
+	    <!-- leaflet directive to include map -->
+	    <leaflet id="map" lf-center="weatherCtrl.center" event-broadcast="weatherCtrl.events" defaults="weatherCtrl.defaults" markers="weatherCtrl.markers"></leaflet>
+	</div>
+</md-content>

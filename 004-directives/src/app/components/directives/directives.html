@@ -1,0 +1,52 @@
+<md-content ui-view  md-scroll-y>
+    <div layout="row" layout-wrap flex layout-margin md-scroll-y>
+        <div flex flex-xs="100">
+            <div md-whiteframe="3" class="bg-white md-padding">
+                <h2>Create a new Card</h2>
+                <md-input-container class="md-block" flex>
+                    <label>Title</label>
+                    <input maxlength="25" ng-model="directivesCtrl.card.title">
+                </md-input-container>
+                <md-input-container class="md-block" flex>
+                    <label>Description</label>
+                    <input maxlength="40" ng-model="directivesCtrl.card.description">
+                </md-input-container>
+                <md-input-container class="md-block" flex>
+                    <label>Message</label>
+                    <input maxlength="70" ng-model="directivesCtrl.card.hardcoded">
+                </md-input-container>
+                <fieldset class="md-block" flex>
+                    <legend>Color</legend>
+                    <div ng-repeat="color in directivesCtrl.colors" class="select-color {{color === directivesCtrl.card.color ? 'select':''}}" ng-click="directivesCtrl.card.color = color">
+                        <div class="bg-{{color}} color-pane"></div>
+                    </div>
+                </fieldset>
+                <fieldset class="md-block" flex>
+                    <legend>Background color</legend>
+                    <div ng-repeat="color in directivesCtrl.colors" class="select-color {{color === directivesCtrl.card.background ? 'select':''}}" ng-click="directivesCtrl.card.background = color">
+                        <div class="bg-{{color}} color-pane"></div>
+                    </div>
+                </fieldset>
+                <fieldset class="md-block" flex>
+                    <legend>Icon</legend>
+                    <div ng-repeat="icon in directivesCtrl.images" class="select-image {{icon === directivesCtrl.card.icon ? 'select':''}}" ng-click="directivesCtrl.card.icon = icon">
+                        <image src="assets/images/{{icon}}" class="image-pane">
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div flex flex-xs="100">
+            <div md-whiteframe="3" class="bg-white md-padding">
+                <card 
+                    to-create="true"
+                    on-save="directivesCtrl.saveCard()" 
+                    card-options="directivesCtrl.card"></card>
+                <card 
+                    ng-repeat="card in directivesCtrl.favCards"
+                    to-create="false"
+                    on-save="directivesCtrl.deleteCard(card)" 
+                    card-options="card"></card>
+            </div>
+        </div>
+    </div>
+</md-content>

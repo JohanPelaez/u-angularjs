@@ -1,0 +1,20 @@
+<div class="card bg-{{$ctrl.cardOptions.background}} color-{{$ctrl.cardOptions.color}}">
+    <md-button class="md-icon-button md-accent favorite" aria-label="Favorite" ng-click="$ctrl.onSave();">
+        <md-icon ng-if="$ctrl.toCreate" md-svg-icon="assets/icon/favorite.svg"></md-icon>
+        <md-icon ng-if="!$ctrl.toCreate" md-svg-icon="assets/icon/close.svg"></md-icon>
+    </md-button>
+    <div layout="row" flex>
+        <div flex="70">
+            <div class="card-title" ng-if="$ctrl.cardOptions.title">{{$ctrl.cardOptions.title}}</div>
+            <div class="card-title" ng-if="!$ctrl.cardOptions.title">Title here</div>
+            <div class="card-description" ng-if="$ctrl.cardOptions.description">{{$ctrl.cardOptions.description}}</div>
+            <div class="card-description" ng-if="!$ctrl.cardOptions.description">Description here</div>
+        </div>
+        <div flex="30">
+            <img ng-if="$ctrl.cardOptions.icon" ng-src="assets/images/{{$ctrl.cardOptions.icon}}" width="96" alt="">
+            <img ng-if="!$ctrl.cardOptions.icon" src="assets/images/no-image.png" width="96" alt="">
+        </div>
+    </div>
+    <div class="card-message" ng-if="$ctrl.cardOptions.hardcoded">{{$ctrl.cardOptions.hardcoded}}</div>
+    <div class="card-message" ng-if="!$ctrl.cardOptions.hardcoded">Message here</div>
+</div>

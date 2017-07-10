@@ -1,0 +1,175 @@
+// bower:scss
+// endbower
+#content{
+    background-color: $gay;
+
+    md-toolbar{
+
+        .md-button{
+
+            margin: 0px;
+
+            &.md-raised:not([disabled]){
+
+                border-radius: 0px;
+                box-shadow: none;
+            }
+
+            a{
+                color: inherit;
+                display: block;
+                line-height: 62px;
+                padding: 0px 10px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    md-content{
+
+        &[md-scroll-y]{
+            background-color: $gay;
+        }
+
+        [md-whiteframe]{
+            margin-bottom: 16px;
+        }
+
+        md-toolbar{
+
+            .toolbar-title{
+                margin: 0px;
+            }
+        }
+    }
+    
+    .bg-red{
+        background-color: $red;
+    }
+    .bg-pink{
+        background-color: $pink;
+    }
+    .bg-purple{
+        background-color: $purple;
+    }
+    .bg-deep-purple{
+        background-color: $deep-purple;
+    }
+    .bg-indigo{
+        background-color: $indigo;
+    }
+    .bg-blue{
+        background-color: $blue;
+    }
+    .bg-light-blue{
+        background-color: $light-blue;
+    }
+    .bg-cyan{
+        background-color: $cyan;
+    }
+    .bg-teal{
+        background-color: $teal;
+    }
+    .bg-green{
+        background-color: $green;
+    }
+    .bg-light-green{
+        background-color: $light-green;
+    }
+    .bg-lime{
+        background-color: $lime;
+    }
+    .bg-yellow{
+        background-color: $yellow;
+    }
+    .bg-amber{
+        background-color: $amber;
+    }
+    .bg-orange{
+        background-color: $orange;
+    }
+    .bg-deep-orange{
+        background-color: $deep-orange;
+    }
+    .bg-brown{
+        background-color: $brown;
+    }
+    .bg-grey{
+        background-color: $grey;
+    }
+    .bg-blue-grey{
+        background-color: $blue-grey;
+    }
+    .bg-black{
+        background-color: $black;
+    }
+    .bg-white{
+        background-color: $white;
+    }
+
+    .color-red{
+        color: $red;
+    }
+    .color-pink{
+        color: $pink;
+    }
+    .color-purple{
+        color: $purple;
+    }
+    .color-deep-purple{
+        color: $deep-purple;
+    }
+    .color-indigo{
+        color: $indigo;
+    }
+    .color-blue{
+        color: $blue;
+    }
+    .color-light-blue{
+        color: $light-blue;
+    }
+    .color-cyan{
+        color: $cyan;
+    }
+    .color-teal{
+        color: $teal;
+    }
+    .color-green{
+        color: $green;
+    }
+    .color-light-green{
+        color: $light-green;
+    }
+    .color-lime{
+        color: $lime;
+    }
+    .color-yellow{
+        color: $yellow;
+    }
+    .color-amber{
+        color: $amber;
+    }
+    .color-orange{
+        color: $orange;
+    }
+    .color-deep-orange{
+        color: $deep-orange;
+    }
+    .color-brown{
+        color: $brown;
+    }
+    .color-grey{
+        color: $grey;
+    }
+    .color-blue-grey{
+        color: $blue-grey;
+    }
+    .color-black{
+        color: $black;
+    }
+    .color-white{
+        color: $white;
+    }
+}
+// injector
+// endinjector

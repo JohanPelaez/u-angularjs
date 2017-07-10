@@ -1,0 +1,61 @@
+// bower:scss
+// endbower
+fieldset{
+    border-color: rgba(0,0,0,0.12);
+    border-width: 1px;
+    margin-bottom: 42px;
+    text-align: center;
+    legend{
+        color: rgba(0,0,0,0.38);
+    }
+    .select-color{
+        border: 1px solid $black;
+        cursor: pointer;
+        display: inline-block;
+        height: 30px;
+        margin: 3px;
+        outline: 0px;
+        width: 30px;
+        &.select{
+            border: 2px solid $black;
+            height: 28px;
+            width: 28px;
+            .color-pane{
+                border: 1px solid $black;
+                height: 20px;
+                width: 20px;
+                margin: 3px;
+            }
+        }
+        .color-pane{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .select-image{
+        border: 1px solid $black;
+        cursor: pointer;
+        display: inline-block;
+        height: 60px;
+        margin: 3px;
+        outline: 0px;
+        width: 60px;
+        &.select{
+            border: 2px solid $black;
+            height: 58px;
+            width: 58px;
+            .image-pane{
+                border: 1px solid $black;
+                height: 50px;
+                width: 50px;
+                margin: 3px;
+            }
+        }
+        .image-pane{
+            height: 60px;
+            width: 60px;
+        }
+    }
+}
+// injector
+// endinjector

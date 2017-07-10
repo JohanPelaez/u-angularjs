@@ -1,0 +1,19 @@
+// bower:scss
+// endbower
+h2.md-title{
+	text-transform: capitalize;
+}
+.weather-view{
+	.jumbotron{
+		text-align: center;
+	}
+	.leaflet-container {
+	    height: 500px;
+	}
+	.md-primary{
+		display: inline-block;
+    	margin-right: 10px;
+	}
+}
+// injector
+// endinjector
